@@ -177,9 +177,8 @@ gulp.task("copy:build", function () {
 });
 
 gulp.task("css:build", function () {
-  return gulp.src(["./src/css/style.css"])
+  return gulp.src(["./src/css/style.min.css"])
     .pipe(rebaseUrls({ root: "./css" }))
-    .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest("./dist/css"));
 });
 

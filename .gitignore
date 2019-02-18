@@ -2,6 +2,7 @@
 bower_components/
 node_modules/
 dist/
+build/
 design/
 npm-debug.*
 
