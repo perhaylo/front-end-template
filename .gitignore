@@ -1,9 +1,10 @@
 # folders
 bower_components/
 node_modules/
-dist/
+docs/
 build/
 design/
+.vscode/
 npm-debug.*
 
 # files
