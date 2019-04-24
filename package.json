@@ -1,27 +1,24 @@
 {
   "name": "project",
   "description": "template",
-  "main": "index.html",
-  "author": "perhaylo",
+  "author": "user",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/perhaylo/front-end-template/git"
-  },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-stage-3": "^7.0.0",
     "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.5",
     "browser-sync": "^2.26.3",
+    "chai": "^4.2.0",
     "cssnano": "^4.1.10",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-cache": "^1.0.2",
-    "gulp-concat": "^2.6.1",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlhint": "^2.2.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-inject": "^4.3.2",
-    "gulp-order": "^1.1.1",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-remove-empty-lines": "^0.1.0",
@@ -30,14 +27,19 @@
     "gulp-sass-glob": "^1.0.9",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgstore": "^7.0.0",
-    "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
     "gulp-webp": "^3.0.0",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^7.0.0",
+    "mocha": "^6.1.4",
+    "path": "^0.12.7",
     "postcss-color-rgba-fallback": "^3.0.0",
     "postcss-csso": "^3.0.0",
     "postcss-flexbugs-fixes": "^4.1.0",
-    "run-sequence": "^2.2.1"
+    "webpack": "^4.30.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
