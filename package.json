@@ -1,8 +1,5 @@
 {
-  "name": "project",
-  "description": "template",
-  "author": "user",
-  "license": "ISC",
+  "name": "template",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
