@@ -170,7 +170,7 @@ gulp.task("img", function () {
   return gulp.src(path.src.img)
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.jpegtran({ progressive: true }),
+      imagemin.mozjpeg({ progressive: true }),
       imagemin.gifsicle({ interlaced: true }),
       imagemin.svgo({
         plugins: [
