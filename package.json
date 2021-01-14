@@ -30,6 +30,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-watch": "^4.2.4",
     "gulp-webp": "^4.0.1",
+    "htmlhint": "^0.14.2",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "mocha": "^8.2.1",
@@ -42,6 +43,7 @@
     "webpack-stream": "^6.1.1"
   },
   "scripts": {
-    "test": "mocha"
+    "mocha": "mocha",
+    "htmlhint": "htmlhint dist/**/*.html"
   }
 }
