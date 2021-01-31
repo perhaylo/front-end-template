@@ -214,21 +214,21 @@ gulp.task("fonts", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "!./src/*.html",
-    "./src/*.*"
+    `${path.src.base}/*.*`,
+    `!${path.src.base}/*.html`
   ], {
-      base: path.src.base
-    })
+    base: path.src.base
+  })
     .pipe(gulp.dest(path.dist.base));
 });
 
 // watch
 gulp.task("watch", function () {
+  gulp.watch([`${path.src.base}/*.*`, `!${path.src.base}/*.html`],
+    gulp.series("copy"));
+
   gulp.watch(path.watch.html,
     gulp.series("html"));
-
-  gulp.watch([`!${path.src.base}/*.html`, `${path.src.base}/*.*`],
-    gulp.series("copy"));
 
   gulp.watch(path.watch.js,
     gulp.series("js"));
