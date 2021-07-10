@@ -1,4 +1,5 @@
 ```
 Basic front-end project template for quick start.
-npm install --global windows-build-tool (Windows Dev Env)
+FOR WINDOWS ENV
+npm install --global --production windows-build-tools@4.0.0 (as admin user)
 ```
