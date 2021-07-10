@@ -11,8 +11,9 @@ const htmlmin = require("gulp-htmlmin"),
   htmlhint = require("gulp-htmlhint");
 
 // Styles
-const sass = require("gulp-sass"),
-  sourcemaps = require("gulp-sourcemaps"),
+const sass = require('gulp-sass')(require('sass'));
+
+const sourcemaps = require("gulp-sourcemaps"),
   gcmq = require("gulp-group-css-media-queries"),
   plumber = require("gulp-plumber"),
   postcss = require("gulp-postcss"),
